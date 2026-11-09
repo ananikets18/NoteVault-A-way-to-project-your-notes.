@@ -8,9 +8,9 @@ A lightweight, secure Notes Management application with JWT authentication, buil
 
 - **Backend:** Java 21 LTS, Spring Boot 3.3.4 (Spring Web, Spring Security 6, Spring Data JPA)
 - **Database:** MySQL 8.0
-- **Security:** Stateless JWT (HMAC-SHA256), BCrypt password hashing
-- **Frontend:** Vanilla HTML5 / Modern JS + Tailwind CSS (served directly by Spring Boot)
-- **Docs & Testing:** Swagger UI (OpenAPI 3.0), Postman collection
+- **Security:** Stateless JWT, BCrypt password hashing
+- **Frontend:** Vanilla HTML5 / Modern JS + Tailwind CSS  
+- **Docs & Testing:** Swagger UI, Postman collection
 
 ---
 
