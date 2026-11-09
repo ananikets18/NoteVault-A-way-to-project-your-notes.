@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server Error | NoteVault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#6366f1',
+                            600: '#4f46e5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-4 antialiased selection:bg-brand-500 selection:text-white">
+
+    <div class="glass-panel max-w-lg w-full p-8 sm:p-10 rounded-3xl shadow-2xl text-center relative overflow-hidden border border-slate-800">
+        <!-- Ambient glow -->
+        <div class="absolute -top-24 -left-24 w-48 h-48 bg-rose-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- 500 Badge & Graphic -->
+        <div class="w-20 h-20 mx-auto rounded-3xl bg-slate-900 border border-slate-800/80 flex items-center justify-center text-rose-400 mb-6 shadow-inner">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+        </div>
+
+        <span class="inline-block text-xs font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20 mb-3">
+            Error 500
+        </span>
+
+        <h1 class="text-3xl font-bold tracking-tight text-white mb-2">Internal Server Error</h1>
+        <p class="text-sm text-slate-400 max-w-sm mx-auto leading-relaxed mb-8">
+            An unexpected error occurred while processing your request. Please try again shortly or return to safety.
+        </p>
+
+        <!-- Redirection Actions -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="/" 
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-medium text-sm rounded-xl transition shadow-lg shadow-brand-500/25">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <span>Return to NoteVault</span>
+            </a>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-900 flex items-center justify-center gap-3 text-xs text-slate-500">
+            <span>NoteVault &bull; Secure Notes Management</span>
+            <span>&bull;</span>
+            <a href="https://github.com/ananikets18/NoteVault---A-Way-to-Protect-your-Notes..git" target="_blank" rel="noopener noreferrer" 
+                class="text-slate-400 hover:text-white transition underline">
+                GitHub Repository
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
